@@ -1,0 +1,80 @@
+body{
+	background : url("../../Downloads/board-761586_1920.jpg");
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.button{
+	background-color: #3cb371;
+	border: 2px solid blue;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	position: absolute;
+	color: blue;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin-left: 42%;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration:0.4s;
+	-o-transition-duration:0.4s;
+	-ms-transition-duration:0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+	/*background : rgba(255, 99, 71, 0.5);*/
+	color : white;
+}
+
+.textbox{
+	background-color: #3cb371;
+	border: 2px solid blue;
+	width: 100px;
+	height: 50px;
+	font-size: 30px;
+	color: blue;
+	text-decoration: none;
+	display: block;
+	margin-left: 45%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.guessesLeft{
+	color: white;
+	margin-left: 49%;
+	margin-top: 10px;
+	font-size: 100px
+	
+}
+.correctGuesses{
+	color: white;
+	display: inline;
+    float: right;
+    margin-top: 100px;
+    text-align : center;
+    margin-right: 100px; 
+}
+.incorrectGuesses{
+	color: white;
+	display: inline;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	text-align: center;
+}
+
+.displayWord{
+	color: white;
+	display: block;
+	margin-top: 100px;
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+	font-size: 72px;
+}

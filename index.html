@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js""></script>
+	<link href="roundSlider-master/src/roundslider.css" rel="stylesheet">
+	<script src="roundSlider-master/src/roundslider.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="HangmanApp" ng-controller="GameController">
+	<div><h1 style="text-align: center;">Hangman App</h1>
+		<div style="text-align: center;font-size: 14px;margin-top: 50px;color: white;">Chances left</div>
+		<div class="guessesLeft">
+			{{guesses}}
+		</div>
+		<div class="incorrectGuesses">
+			<div><i class="fa fa-thumbs-down" style="font-size:60px;color:red;"></i></div>
+			Incorrect guesses:-<span ng-repeat="letter in incorrectLettersChoosen">{{letter}}</span>
+		</div>
+		<div class="correctGuesses">
+			<div><i class="fa fa-thumbs-up" style="font-size:60px;color:green;"></i></div>
+			Correct guesses:-<span ng-repeat="letter in correctLettersChoosen">{{letter}}</span>
+		</div>
+
+		<div class="displayWord">{{displayWord}}</div>
+		<div>
+			<div style="text-align: center;">
+				<input type="text" maxlength="1" placeholder="Here..." name="guess" class="textbox" ng-model="input.letter">
+				<button ng-click="letterChoosen()" class="button">Submit</button>
+			</div>
+			<div>
+				<div id="demo"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
